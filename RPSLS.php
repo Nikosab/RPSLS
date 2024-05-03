@@ -10,9 +10,9 @@ $pairs = [
     "spock" => ["rock", "scissors"]
 ];
 
-$playerChoise = strtolower(readline("Rock, Paper, Scissors, Lizard or Spock? "));
+$userChoise = strtolower(readline("Rock, Paper, Scissors, Lizard or Spock? "));
 
-if (!in_array($playerChoise, $choices)) {
+if (!in_array($userChoise, $choices)) {
     echo "Invalid choice!";
     exit;
 }
@@ -21,9 +21,9 @@ $computerChoice = $choices[array_rand($choices)];
 
 echo "Computer's choice: $computerChoice\n";
 
-if ($playerChoise === $computerChoice) {
+if ($userChoise === $computerChoice) {
     echo "It's a draw";
-} elseif (in_array($computerChoice, $pairs[$playerChoise])) {
+} elseif (in_array($computerChoice, $pairs[$userChoise])) {
     echo "Player wins!";
 } else {
     echo "Computer wins!";
