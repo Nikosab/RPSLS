@@ -10,7 +10,7 @@ $pairs = [
     "spock" => ["rock", "scissors"]
 ];
 
-$userChoise = strtolower(readline("Rock, Paper, Scissors, Lizard or Spock? "));
+$userChoise = strtolower(readline("Rock, Paper, Scissors, Lizard or Spock?"));
 
 if (!in_array($userChoise, $choices)) {
     echo "Invalid choice!";
@@ -30,3 +30,4 @@ if ($userChoise === $computerChoice) {
 }
 
 ?>
+
